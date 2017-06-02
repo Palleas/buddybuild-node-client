@@ -1,0 +1,31 @@
+{
+    "name": "buddybuild-node",
+    "version": "0.1",
+    "description": "Buddybuild REST API client",
+    "main": "lib/buddybuild.js",
+    "author": "Romain Pouclet",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-plugin-transform-flow-strip-types": "^6.22.0",
+        "expect": "^1.20.2",
+        "flow-bin": "^0.46.0",
+        "flow-remove-types": "^1.2.1",
+        "flow-typed": "^2.1.2",
+        "mocha": "^3.4.2",
+        "nock": "^9.0.13"
+    },
+    "babel": {
+        "plugins": [
+            "transform-flow-strip-types"
+        ]
+    },
+    "dependencies": {
+        "bluebird": "^3.5.0",
+        "request-promise-any": "^1.0.4"
+    },
+    "scripts": {
+        "build": "babel -d dest src",
+        "test": "mocha -r flow-remove-types/register tests/**/*.js"
+    }
+}
