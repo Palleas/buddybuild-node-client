@@ -28,6 +28,14 @@ describe("Buddybuild", () => {
         .catch(err => { done(); throw err; });
     });
 
+    it('fetches branches', (done) => {
+
+    });
+
+    it('fetches builds', (done) => {
+
+    });
+
     it("fetches the latest build", (done) => {
         buddybuild.client("my-token").latestBuild("58a4e07838704cb2eacd7ce6")
         .then(build => {
@@ -36,4 +44,23 @@ describe("Buddybuild", () => {
         })
         .catch(err => { done(); throw err; });
     });
+
+    it('fetches a build');
+
+    it('fetches test results for a build');
+
+    it('fetches the code coverage for a build');
+
+    it('triggers a build');
+
+    it('cancels a build');
+
+    it('fetches deployment groups');
+
+    it('adds testers to a deployment group');
+
+    it('removes tests from a deployment group');
+
+    it('lists buddybuild IP address ranges');
+
 });
