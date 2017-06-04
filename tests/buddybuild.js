@@ -28,13 +28,9 @@ describe("Buddybuild", () => {
         .catch(err => { done(); throw err; });
     });
 
-    it('fetches branches', (done) => {
+    it('fetches branches');
 
-    });
-
-    it('fetches builds', (done) => {
-
-    });
+    it('fetches builds');
 
     it("fetches the latest build", (done) => {
         buddybuild.client("my-token").latestBuild("58a4e07838704cb2eacd7ce6")

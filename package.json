@@ -1,6 +1,6 @@
 {
     "name": "buddybuild-node",
-    "version": "0.1",
+    "version": "0.0.1",
     "description": "Buddybuild REST API client",
     "main": "lib/buddybuild.js",
     "author": "Romain Pouclet",
@@ -26,6 +26,6 @@
     },
     "scripts": {
         "build": "babel -d dest src",
-        "test": "mocha -r flow-remove-types/register tests/**/*.js"
+        "test": "mocha -r flow-remove-types/register tests/*.js"
     }
 }
